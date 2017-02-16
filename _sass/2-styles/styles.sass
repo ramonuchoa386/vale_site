@@ -1,0 +1,56 @@
+//---------- todos os estilos importados ----------//
+
+@import partials/header
+@import partials/footer
+@import partials/logo
+@import partials/aboutSect
+@import partials/contactSect
+@import partials/formStyle
+
+//---------- estilos globais ----------//
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+html
+  font-family: Cambria, serif
+  body
+    overflow: hidden
+    height: 100vh
+    background-repeat: no-repeat
+    background-size: cover
+    &.pagPrin
+      background-image: url(../img/bg_01.png)
+    &.pagSobre
+      background-image: url(../img/bg_02.png)
+    &.pagCont
+      background-image: url(../img/bg_03.png)
+    section.wrapper
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      section.pageContent
+        background-color: $lightGrey
+        padding-bottom: 15px
+        width: 45vw
+        margin: 5vh 10vw 0 0
+        h2
+          background-color: $matteRed
+          color: #fff
+          padding: 3px 10px
+          position: relative
+          z-index: 1
+          top: -10px
+          width: 200px
+          margin-left: 2vw
+          &:after
+            content: ""
+            position: absolute
+            height: 5px
+            border-top: 1px solid $wine
+            top: 15px
+            width: 28vw
+            left: 100%
+            margin-left: 0px

@@ -1,0 +1,24 @@
+<header>
+  <nav>
+    <button type='button'>
+      <svg width='20px' height='16px'>
+        <path d='M19,2H1C0.4,2,0,1.6,0,1s0.4-1,1-1h18c0.6,0,1,0.4,1,1S19.6,2,19,2z'/>
+        <path d='M19,9H1C0.4,9,0,8.6,0,8s0.4-1,1-1h18c0.6,0,1,0.4,1,1S19.6,9,19,9z'/>
+        <path d='M19,16H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h18c0.6,0,1,0.4,1,1S19.6,16,19,16z'/>
+      </svg>
+    </button>
+    <ul>
+      <li><a href='{{site.baseurl}}/' {% if page.url == '/' %} class='active' {% endif %} target='_self'>Início</a></li>
+      <li>|</li>
+      <li><a href='{{site.baseurl}}/sobre' {% if page.url == '/sobre.html' %} class='active' {% endif %} target='_self'>Quem somos</a></li>
+      <li>|</li>
+      <li><a href='{{site.baseurl}}/produtos' {% if page.url == '/produtos.html' %} class='active' {% endif %} target='_self'>Produtos</a></li>
+      <li>|</li>
+      <li><a href='{{site.baseurl}}/fazenda' {% if page.url == '/fazenda.html' %} class='active' {% endif %} target='_self'>A fazenda</a></li>
+      <li>|</li>
+      <li><a href='{{site.baseurl}}/parceiros' {% if page.url == '/parceiros.html' %} class='active' {% endif %} target='_self'>Parceiros</a></li>
+      <li>|</li>
+      <li><a href='{{site.baseurl}}/contato' {% if page.url == '/contato.html' %} class='active' {% endif %} target='_self'>Contato</a></li>
+    </ul>
+  </nav>
+</header>
