@@ -1,17 +1,18 @@
 ---
-layout: default
+layout: page
 bodyClass: pagCont
+pageClass: contactSect
 ---
-
-<section class='wrapper'>
-  {% include armazem_logo.html logoClass='smallLogo' %}
-
-  <section class='pageContent contactSect'>
-    <div><p>Este espaço é aberto para você manifestar suas sugestões, críticas e opiniões sobre o Armazém Vale das Palmeiras. Seus comentários são muito importantes. É por meio deles que nos esforçamos atendê-los melhor a cada dia. Agradecemos a sua participação!</p></div>
-    <h2>Contato</h2>
-    <div>
-      {% include form02.html %}
-      <img src='{{site.baseurl}}/assets/img/img_05.png' alt='Interior do Armazém'>
-    </div>
-  </section>
-</section>
+<div>
+  <p>Este espaço é aberto para você manifestar suas sugestões, críticas e opiniões sobre o Armazém Vale das Palmeiras. Seus comentários são muito importantes. É por meio deles que nos esforçamos atendê-los melhor a cada dia. Agradecemos a sua participação!</p>
+</div>
+<h2>Contato</h2>
+<div>
+  <form method='post' action='contactengine.php'>
+    <input type='text' name='nome' placeholder='Nome'>
+    <input type='email' name='email' placeholder='Email'>
+    <textarea name='mensagem' placeholder='Mensagem' onkeyup='adjust_textarea(this)'></textarea>
+    <input class='formBtn' type='submit' value='Enviar'>
+  </form>
+  <img src='{{site.baseurl}}/assets/img/img_05.png' alt='Interior do Armazém'>
+</div>
