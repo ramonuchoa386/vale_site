@@ -1,5 +1,5 @@
 <?php
-  $EmailTo = "contato@armazemvaledaspalmeiras.com.br";
+  $EmailTo = "ramonuchoa386@gmail.com";
   $Name = Trim(stripslashes($_POST['nome']));
   $Email = Trim(stripslashes($_POST['email']));
   $Message = Trim(stripslashes($_POST['mensagem']));
@@ -28,7 +28,7 @@
 
   // redirect to success page
     if ($success){
-      print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
+      print "<meta http-equiv=\"refresh\" content=\"0;URL=success.html\">";
     }
     else{
       print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";

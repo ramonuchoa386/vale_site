@@ -198,7 +198,8 @@ html {
         background-color: #e1e1e1;
         padding-bottom: 15px;
         width: 45vw;
-        margin: 5vh 10vw 0 0; }
+        margin: 5vh 10vw 0 0;
+        overflow-x: hidden; }
         html body section.wrapper section.pageContent h2 {
           background-color: #b11711;
           color: #fff;
@@ -214,6 +215,6 @@ html {
             height: 5px;
             border-top: 1px solid #99242d;
             top: 15px;
-            width: 28vw;
+            width: 100vw;
             left: 100%;
             margin-left: 0px; }
